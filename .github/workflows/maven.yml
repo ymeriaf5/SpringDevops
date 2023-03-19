@@ -31,7 +31,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
       - name: Run code quality check
-        run: |
+        run:
             ./mvnw checkstyle:check
             ./mvnw spotbugs:check
 
